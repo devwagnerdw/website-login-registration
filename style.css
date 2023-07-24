@@ -27,7 +27,7 @@ header{
 }
 .logo{
   font-size: 2em;
-  color: #fff;
+  color: #11a559;
   user-select: none;/* Impede que o texto dentro do elemento seja selecionado pelo usuário.
   Ou seja, o texto não pode ser destacado através de seleção com o cursor do mouse ou atalhos de teclado. */
 }
@@ -35,7 +35,7 @@ header{
 .navigation a{
   position: relative;
   font-size: 1.1em;
-  color: #fff;
+  color: #11a559;
   text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
@@ -47,7 +47,7 @@ header{
   bottom: -6px;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #406954;
   border-radius: 5px;
   transform-origin:right;
   transform: scale(0);
@@ -63,18 +63,141 @@ header{
   width: 130px;
   height: 50px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #11a559;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.1em;
-  color: #fff;
+  color:#11a559;
   font-weight: 500;
   margin-left: 4em;
   transition: .5s;
 }
 
 .navigation .buttonlogin:hover{
-  background: #fff;
+  background: #11a559;
   color: #122533;
 }
 
+
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid #28a966;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30 rgba(0, 0 , 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .form-login{
+width: 100%;
+padding: 40px;
+}
+
+.form-login h2{
+  font-size: 2em;
+  color: #11a559;
+  text-align: center;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #11a559;
+  margin: 30px 0;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #11a559;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #e7dfdf;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #11a559;
+  line-height: 57px;
+}
+
+.remember-forgot{
+  font-size: .9em;
+  color: #11a559;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input{
+  accent-color: #11a559;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #11a559;
+  text-decoration: none;
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  width: 100%;
+  height: 45px;
+  background:#11a559;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+}
+
+.login-register{
+  font-size: .9em;
+  color: #11a559;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+color: #06ff7f;
+text-decoration: none;
+font-weight: 600;
+}
+
+.login-register p a:hover{
+  text-decoration: underline;
+}
