@@ -4,7 +4,15 @@
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('body.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 header{
   position: fixed;
@@ -12,7 +20,6 @@ header{
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
