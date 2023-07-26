@@ -91,11 +91,28 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .wrapper .form-login{
 width: 100%;
 padding: 40px;
+}
+
+.wrapper .icon-x{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #06ff7f;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .form-login h2{
@@ -122,9 +139,10 @@ padding: 40px;
   font-weight: 500;
   pointer-events: none;
   transition: .5s;
+  
 }
 
-.input-box input:focus~label,
+ input:focus~label,
 .input-box input:valid~label{
   top: -5px;
 }
