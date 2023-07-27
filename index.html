@@ -19,13 +19,13 @@
     </header>
 
     <div class="wrapper">
-      <span class="icon-x"><ion-icon name="close-outline"></ion-icon></span>
-      <div class="form-login">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
         <h2>Login</h2>
         <form action="#">
           <div class="input-box">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" required />
+            <input type="text" required />
             <label>Email</label>
           </div>
 
@@ -35,7 +35,8 @@
             <label>Password</label>
           </div>
           <div class="remember-forgot">
-            <label> <input type="checkbox">
+            <label>
+              <input type="checkbox" />
               Lembre de mim
             </label>
             <a href="#">Esqueceu sua senha ?</a>
@@ -44,9 +45,46 @@
 
           <div class="login-register">
             <p>
-              Não tem uma conta ? <a href="#" class="register-link">Registre-se</a>
+              Não tem uma conta ?
+              <a href="#" class="register-link">Registre-se</a>
             </p>
+          </div>
+        </form>
+      </div>
 
+      <div class="form-box register">
+        <h2>cadastrar</h2>
+        
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="text" required />
+            <label>Usuario</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" />
+              concorda com os termos e condições
+            </label>
+          </div>
+          <button type="submit" class="btn">cadastrar</button>
+
+          <div class="login-register">
+            <p>
+              já tem uma conta ?
+              <a href="#" class="login-link">Login</a>
+            </p>
           </div>
         </form>
       </div>

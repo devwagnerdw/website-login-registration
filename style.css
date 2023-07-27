@@ -78,7 +78,7 @@ header{
   color: #122533;
 }
 
-
+   
 .wrapper{
   position: relative;
   width: 400px;
@@ -91,31 +91,42 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
-.wrapper .form-login{
+.wrapper .form-box{
 width: 100%;
 padding: 40px;
 }
 
-.wrapper .icon-x{
+
+
+.wrapper .form-box.register{
+  position: absolute;
+  transform: translateX(400px);
+}
+
+
+
+.wrapper .icon-close{
   position: absolute;
   top: 0;
   right: 0;
   width: 45px;
   height: 45px;
-  background: #06ff7f;
+  background: #73eeae;
   font-size: 2em;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  border-bottom-left-radius:20px;
+  cursor: pointer;
+  z-index: 1;
+
   cursor: pointer;
 }
 
-.form-login h2{
+.form-box h2{
   font-size: 2em;
   color: #11a559;
   text-align: center;
@@ -210,12 +221,18 @@ padding: 40px;
   margin: 25px 0 10px;
 }
 
-.login-register p a {
-color: #06ff7f;
-text-decoration: none;
-font-weight: 600;
+.login-register p a{
+  color: #054d26;
+  text-decoration: none;
+  font-weight: 600;
+
 }
 
 .login-register p a:hover{
   text-decoration: underline;
 }
+
+
+
+
+
