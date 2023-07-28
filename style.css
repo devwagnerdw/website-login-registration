@@ -24,6 +24,7 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  
 }
 .logo{
   font-size: 2em;
@@ -80,6 +81,7 @@ header{
 
    
 .wrapper{
+  margin-top: 60px;
   position: relative;
   width: 400px;
   height: 440px;
@@ -91,6 +93,18 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease ,height .2s ease;
+}
+
+.wrapper.active-popup{
+  transform: scale(1);
+
+}
+
+.wrapper.active{
+  height: 520px;
 }
 
 .wrapper .form-box{
@@ -98,13 +112,28 @@ width: 100%;
 padding: 40px;
 }
 
+.wrapper .form-box.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
 
+.wrapper.active .form-box.login{
+transition: none;
+transform: translateX(-400px);
+}
 
 .wrapper .form-box.register{
+  
   position: absolute;
+  transition: none;
   transform: translateX(400px);
 }
 
+
+.wrapper.active .form-box.register{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
 
 
 .wrapper .icon-close{
